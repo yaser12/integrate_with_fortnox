@@ -13,7 +13,7 @@
 
 Route::get('/', function ()
 {
-    return 'welcome';
+    return '<a href="/create_invoice">create new invoices for customer 2 and financal year 2 </a><br><a href="/showListAllInvoices">show list invoices for customer 2 and financal year 2 </a><br>';
 });
 
 Route::get('/create_invoice', 'ApiController@create_invoice');

@@ -18,7 +18,7 @@ public function  showListAllInvoices()
         'Accept'        => 'application/json',
         'Content-Type'        => 'application/json'
     ];
-    $res = $client->request('GET', '/3/invoices', [
+    $res = $client->request('GET', '/2/invoices', [
         'headers' => $headers,'verify' => false
     ]);
     try {
